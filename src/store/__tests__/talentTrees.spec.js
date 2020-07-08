@@ -2,8 +2,8 @@ import {createStore, applyMiddleware} from 'redux';
 import {normalize} from 'normalizr';
 import thunk from 'redux-thunk';
 
-import talentTreeReducer from '../talentTrees/talentTrees.reducers';
-import {loadTalentTrees} from '../talentTrees/talentTrees.actions';
+import talentTreeReducer from '../calculator/calculator.reducers';
+import {loadTalentTrees} from '../calculator/calculator.actions';
 
 import * as schema from '../schema';
 

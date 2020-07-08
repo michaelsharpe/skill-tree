@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TalentTreeGroup from './TalentTreeGroup';
+import TalentTreeGroup from './components/TalentTreeGroup';
 
 const TalentScreen = () => (
   <>

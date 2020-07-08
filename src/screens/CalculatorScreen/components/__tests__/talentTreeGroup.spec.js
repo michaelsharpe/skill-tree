@@ -3,8 +3,8 @@ import {render} from '@testing-library/react';
 
 import {TalentTreeGroup} from './../TalentTreeGroup';
 
-import talentData from '../../data/talents.json';
-import {normalizeTreeData} from '../../helpers/normalizeData';
+import talentData from '../../../../data/talents.json';
+import {normalizeTreeData} from '../../../../helpers/normalizeData';
 
 const normalizedData = normalizeTreeData(talentData);
 
@@ -26,12 +26,12 @@ describe('TalentTreeGroup', () => {
   it('should render all talent trees', () => {
     const noop = () => {};
 
-    const {queryByText} = render(
+    const {queryByTestId} = render(
       <TalentTreeGroup loadTalentTrees={noop} talentTrees={talentData} />,
     );
 
     names.forEach(name => {
-      expect(queryByText(name)).not.toBeNull();
+      expect(queryByTestId(name)).not.toBeNull();
     });
   });
 });

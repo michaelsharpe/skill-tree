@@ -1,0 +1,90 @@
+@mixin sprite($x: 0, $y: 0) {
+  background-image: url('/talent-icons-sprite.png');
+  background-position: #{$x + px} #{$y + px};
+  background-repeat: 'none';
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+
+  &-stack {
+    &.active {
+      @include sprite(0, 0);
+    }
+
+    &.inactive {
+      @include sprite(0, 50);
+    }
+  }
+
+  &-cutlery {
+    &.active {
+      @include sprite(-50, 0);
+    }
+
+    &.inactive {
+      @include sprite(-50, 50);
+    }
+  }
+
+  &-cake {
+    &.active {
+      @include sprite(-100, 0);
+    }
+
+    &.inactive {
+      @include sprite(-100, 50);
+    }
+  }
+
+  &-crown {
+    &.active {
+      @include sprite(-150, 0);
+    }
+
+    &.inactive {
+      @include sprite(-150, 50);
+    }
+  }
+
+  &-yacht {
+    &.active {
+      @include sprite(-200, 0);
+    }
+
+    &.inactive {
+      @include sprite(-200, 50);
+    }
+  }
+
+  &-snorkel {
+    &.active {
+      @include sprite(-250, 0);
+    }
+
+    &.inactive {
+      @include sprite(-250, 50);
+    }
+  }
+
+  &-lightning {
+    &.active {
+      @include sprite(-300, 0);
+    }
+
+    &.inactive {
+      @include sprite(-300, 50);
+    }
+  }
+
+  &-skull {
+    &.active {
+      @include sprite(-350, 0);
+    }
+
+    &.inactive {
+      @include sprite(-350, 50);
+    }
+  }
+}

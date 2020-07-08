@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
 
-import {ADD_ENTITIES} from './talentTrees.actions';
+import {ADD_ENTITIES} from './calculator.actions';
 
 const talentTrees = (state = [], action) => {
   switch (action.type) {

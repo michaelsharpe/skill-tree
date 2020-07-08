@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
 
-import talentTrees from './talentTrees/talentTrees.reducers';
+import calculator from './calculator/calculator.reducers';
 
-export default combineReducers({talentTrees});
+export default combineReducers({calculator});

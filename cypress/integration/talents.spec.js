@@ -8,8 +8,11 @@ describe('Talent scren', () => {
   it('displays the talent icons', () => {
     cy.visit('/');
 
-    Object.entries(normalized.entities.talents).forEach(([id, talent]) => {
-      cy.contains(talent.name);
+    Object.values(normalized.entities.talents).forEach(talent => {
+      cy.get(`[cy-test="${talent.name}"]`).should(
+        'have.css',
+        'background-image',
+      );
     });
   });
 });

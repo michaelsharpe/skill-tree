@@ -1,4 +1,4 @@
 export {
   selectTalent,
   selectTalentTree,
-} from './talentTrees/talentTrees.selectors';
+} from './calculator/calculator.selectors';

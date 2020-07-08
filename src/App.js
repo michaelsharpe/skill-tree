@@ -1,7 +1,15 @@
 import React from 'react';
+import {Provider} from 'react-redux';
+
+import store from './store';
+import TalentScreen from './components/TalentScreen';
 
 function App() {
-  return <div>Welcome to Rune Mastery</div>;
+  return (
+    <Provider store={store}>
+      <TalentScreen />
+    </Provider>
+  );
 }
 
 export default App;

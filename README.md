@@ -1,14 +1,24 @@
 # Rune Mastery
 
-![coverage:branches](coverage/badge-branches.svg) ![coverage:functions](coverage/badge-functions.svg) ![coverage:lines](coverage/badge-lines.svg) ![coverage:summary](coverage/badge-statements.svg) !
-
-![Coverage Status](https://coveralls.io/repos/github/michaelsharpe/rune-mastery/badge.svg?branch=master) [Coverage report](coverage/lcov-report/index.html)
-
 Live site can be found here:
 
 [Rune Mastery](https://rune-mastery.netlify.app/)
 
 Public development Trello board available [here](https://trello.com/b/cNZZn1qR/skill-tree)
+
+### Coveralls
+
+[![Coverage Status](https://coveralls.io/repos/github/michaelsharpe/rune-mastery/badge.svg?branch=master)](https://coveralls.io/github/michaelsharpe/rune-mastery)
+
+### Code Climate
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/188d41c0d4e4703901f7/maintainability)](https://codeclimate.com/github/michaelsharpe/rune-mastery/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/188d41c0d4e4703901f7/test_coverage)](https://codeclimate.com/github/michaelsharpe/rune-mastery/test_coverage)
+
+# Detailed Code Coverage
+
+![coverage:branches](coverage/badge-branches.svg) ![coverage:functions](coverage/badge-functions.svg) ![coverage:lines](coverage/badge-lines.svg) ![coverage:summary](coverage/badge-statements.svg) !
 
 ## Front-End Developer Challenge
 

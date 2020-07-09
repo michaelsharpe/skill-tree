@@ -1,0 +1,9 @@
+exclude_patterns:
+  - '**/*.spec.js'
+  - '**/__test__'
+  - '.vscode/'
+  - 'coverage/'
+  - 'cypress/'
+  - 'public/'
+  - '.github/'
+  - 'assets/'

@@ -1,5 +1,9 @@
 # Rune Mastery
 
+![coverage:branches](coverage/badge-branches.svg) ![coverage:functions](coverage/badge-functions.svg) ![coverage:lines](coverage/badge-lines.svg) ![coverage:summary](coverage/badge-statements.svg) !
+
+![Coverage Status](https://coveralls.io/repos/github/michaelsharpe/rune-mastery/badge.svg?branch=master) [Coverage report](coverage/lcov-report/index.html)
+
 Live site can be found here:
 
 [Rune Mastery](https://rune-mastery.netlify.app/)

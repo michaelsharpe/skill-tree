@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: 10.x
 
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v2.6.0
         env:

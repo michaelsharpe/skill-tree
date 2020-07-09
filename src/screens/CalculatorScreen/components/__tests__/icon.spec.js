@@ -6,7 +6,6 @@ import Icon from './../Icon';
 describe('Icon', () => {
   const icon = {
     name: 'testing',
-    active: true,
   };
 
   it('renders', () => {
@@ -21,16 +20,12 @@ describe('Icon', () => {
   });
 
   it('has active class when active', () => {
-    const {getByTestId} = render(<Icon icon={icon} />);
+    const {getByTestId} = render(<Icon active={true} icon={icon} />);
     expect(getByTestId(`${icon.name}`)).toHaveClass('active');
   });
 
   it('has inactive class when inactive', () => {
-    const inactiveIcon = {
-      ...icon,
-      active: false,
-    };
-    const {getByTestId} = render(<Icon icon={inactiveIcon} />);
+    const {getByTestId} = render(<Icon icon={icon} active={false} />);
     expect(getByTestId(`${icon.name}`)).toHaveClass('inactive');
   });
 

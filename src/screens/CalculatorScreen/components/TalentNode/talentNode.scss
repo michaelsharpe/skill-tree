@@ -1,4 +1,8 @@
 .talent {
   display: inline-block;
   margin-right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

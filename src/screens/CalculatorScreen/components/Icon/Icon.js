@@ -3,13 +3,13 @@ import {shape, string, boolean} from 'prop-types';
 
 import './icon.scss';
 
-const Icon = ({icon}) => {
-  const active = icon.active ? 'active' : 'inactive';
+const Icon = ({icon, active}) => {
+  const isActive = active ? 'active' : 'inactive';
   return (
     <div
       data-testid={icon.name}
       cy-test={icon.name}
-      className={`icon icon-${icon.name} ${active}`}
+      className={`icon icon-${icon.name} ${isActive}`}
     ></div>
   );
 };

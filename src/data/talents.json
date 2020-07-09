@@ -5,22 +5,30 @@
     "talents": [
       {
         "id": 1,
+        "cost": 1,
+        "unlocked": false,
         "name": "stack",
         "icon": "stack",
         "children": [
           {
             "id": 2,
+            "cost": 1,
+            "unlocked": false,
             "name": "cutlery",
             "icon": "cutlery",
             "children": [
               {
                 "id": 3,
+                "cost": 1,
+                "unlocked": false,
                 "name": "cake",
                 "icon": "cake",
 
                 "children": [
                   {
                     "id": 4,
+                    "cost": 1,
+                    "unlocked": false,
                     "name": "crown",
                     "icon": "crown",
                     "children": []
@@ -39,21 +47,29 @@
     "talents": [
       {
         "id": 5,
+        "cost": 1,
+        "unlocked": false,
         "name": "yacht",
         "icon": "yacht",
         "children": [
           {
             "id": 6,
+            "cost": 1,
+            "unlocked": false,
             "name": "snorkel",
             "icon": "snorkel",
             "children": [
               {
                 "id": 7,
+                "cost": 1,
+                "unlocked": false,
                 "name": "lightning",
                 "icon": "lightning",
                 "children": [
                   {
                     "id": 8,
+                    "cost": 1,
+                    "unlocked": false,
                     "name": "skull",
                     "icon": "skull",
                     "children": []

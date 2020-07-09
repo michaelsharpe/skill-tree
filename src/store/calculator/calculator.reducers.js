@@ -22,10 +22,16 @@ const talents = (state = [], action) => {
         ...state,
         ...action.payload.talents,
       };
-
     default:
       return state;
   }
 };
 
-export default combineReducers({talentTrees, talents});
+const counter = (state = {total: 6}, action) => {
+  return state;
+};
+
+// hard coding 6 as the total points here. This is sloppy and should be changed.
+// Like this would come from an API server as data to persist this state for the player.
+
+export default combineReducers({talentTrees, talents, counter});

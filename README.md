@@ -4,6 +4,8 @@ Live site can be found here:
 
 [Rune Mastery](https://rune-mastery.netlify.app/)
 
+Public development Trello board available [here](https://trello.com/b/cNZZn1qR/skill-tree)
+
 ## Front-End Developer Challenge
 
 In this repo you will find a mock-up and all the necessary assets (in a separate folder). The design is of a tool for a fictitious game called “TitanStar Legends”, and will not be repurposed or otherwise utilized by D&D Beyond – it is only a coding challenge.

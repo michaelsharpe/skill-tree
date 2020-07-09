@@ -1,28 +1,48 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
-import {selectTalentTree} from '../../../store/selectors';
+
+import {
+  selectAllTalentTrees,
+  selectUnlockedTalents,
+  selectCounterTotal,
+} from '../../../store/selectors';
 
 import TalentTree from './TalentTree';
-import {loadTalentTrees} from '../../../store/calculator/calculator.actions';
+import {
+  loadTalentTrees,
+  updateTalent,
+} from '../../../store/calculator/calculator.actions';
 
-export const TalentTreeGroup = ({loadTalentTrees, talentTrees}) => {
+export const TalentTreeGroup = ({
+  loadTalentTrees,
+  talentTrees,
+  updateTalent,
+  counter,
+}) => {
   useEffect(() => {
     loadTalentTrees();
   }, [loadTalentTrees]);
 
   return talentTrees.map(talentTree => (
-    <TalentTree talentTree={talentTree} key={talentTree.id} />
+    <TalentTree
+      talentTree={talentTree}
+      key={talentTree.id}
+      updateTalent={updateTalent}
+      counter={counter}
+    />
   ));
 };
 
 const mapStateToProps = state => {
   return {
-    talentTrees: Object.values(state.calculator.talentTrees).map(tree =>
-      selectTalentTree(state.calculator, tree.id),
-    ),
+    talentTrees: selectAllTalentTrees(state),
+    counter: {
+      current: selectUnlockedTalents(state).length,
+      total: selectCounterTotal(state),
+    },
   };
 };
 
-const mapDispatchToProps = {loadTalentTrees};
+const mapDispatchToProps = {loadTalentTrees, updateTalent};
 
 export default connect(mapStateToProps, mapDispatchToProps)(TalentTreeGroup);

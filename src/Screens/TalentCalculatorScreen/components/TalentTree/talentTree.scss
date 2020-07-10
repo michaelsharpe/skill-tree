@@ -1,0 +1,22 @@
+@import 'Styles/main';
+
+.talent-tree {
+  padding: 20px 5px;
+
+  @include respond-to('small') {
+    display: inline-block;
+    padding: 40px;
+  }
+}
+
+.tree-name {
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  margin-right: 40px;
+
+  @include respond-to('small') {
+    top: 0;
+    display: inline;
+  }
+}

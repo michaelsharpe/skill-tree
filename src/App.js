@@ -2,12 +2,12 @@ import React from 'react';
 import {Provider} from 'react-redux';
 
 import store from './Store';
-import TalentScreen from './Screens/CalculatorScreen';
+import TalentCalculatorScreen from './Screens/TalentCalculatorScreen';
 
 function App() {
   return (
     <Provider store={store}>
-      <TalentScreen />
+      <TalentCalculatorScreen />
     </Provider>
   );
 }

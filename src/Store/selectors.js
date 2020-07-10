@@ -1,1 +1,1 @@
-export * from './calculator/calculator.selectors';
+export * from './talentCalculator/talentCalculator.selectors';

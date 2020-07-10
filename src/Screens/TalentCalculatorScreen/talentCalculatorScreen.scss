@@ -1,0 +1,70 @@
+@import 'Styles/main';
+
+.container {
+  padding: 50px;
+  background: url(/talent-calc-bg.png);
+  margin-top: 50px;
+
+  @include respond-to('medium') {
+    margin-top: 0;
+  }
+}
+
+.calculator {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+
+  @include respond-to('medium') {
+    width: 100%;
+  }
+
+  h1 {
+    background-color: $darkest-grey;
+    padding: 10px;
+    margin-bottom: 50px;
+
+    @include respond-to('medium') {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.talent-group-container,
+.talent-counter-container {
+  display: inline-block;
+  @include respond-to('medium') {
+    display: block;
+  }
+}
+
+.talent-group-container {
+  @include respond-to('small') {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.talent-counter-container {
+  margin-left: 100px;
+  position: relative;
+  bottom: 50px;
+
+  @include respond-to('medium') {
+    margin-left: 0;
+    bottom: 0;
+  }
+}

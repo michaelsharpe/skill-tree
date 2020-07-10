@@ -1,0 +1,9 @@
+h1 {
+  @include respond-to('small') {
+    font-size: 1.8em;
+  }
+
+  @include respond-to('xs-small') {
+    font-size: 1.5em;
+  }
+}

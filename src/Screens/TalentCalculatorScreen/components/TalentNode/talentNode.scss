@@ -1,0 +1,35 @@
+@import 'Styles/main';
+
+.talent {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 1px;
+  z-index: 5;
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include respond-to('small') {
+    display: block;
+    top: 0;
+    margin: 0 auto;
+    width: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+.progress-container {
+  bottom: 17px;
+  display: inline-block;
+  position: relative;
+  left: 1px;
+
+  @include respond-to('small') {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    bottom: 0;
+    width: 65px;
+  }
+}

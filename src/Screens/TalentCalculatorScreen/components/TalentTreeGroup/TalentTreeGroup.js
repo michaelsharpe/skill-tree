@@ -13,7 +13,7 @@ import TalentTree from '../TalentTree';
 import {
   loadTalentTrees,
   updateTalent,
-} from 'Store/calculator/calculator.actions';
+} from 'Store/talentCalculator/talentCalculator.actions';
 
 export const TalentTreeGroup = ({
   loadTalentTrees,

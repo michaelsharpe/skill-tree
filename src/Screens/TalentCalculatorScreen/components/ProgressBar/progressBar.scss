@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import 'Styles/main';
 
 .progress-bar {
   background-color: $dark-grey;
@@ -8,6 +8,15 @@
   display: inline-block;
   height: 13px;
   text-align: left;
+
+  @include respond-to('small') {
+    display: block;
+    height: 13px;
+    text-align: left;
+    transform: rotate(90deg);
+    right: 20px;
+    position: relative;
+  }
 }
 
 .progress {

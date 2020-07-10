@@ -5,7 +5,7 @@ import * as schema from '../schema';
 
 // special selector here.  Conditional so that when testing and there is no calculator on the state, we know we are inside it/
 export const selectCalculator = state =>
-  state.calculator ? state.calculator : state;
+  state.talentCalculator ? state.talentCalculator : state;
 
 export const selectCounter = state => selectCalculator(state).counter;
 

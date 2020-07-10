@@ -12,10 +12,14 @@
 
 .calculator {
   text-align: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 
-  @include respond-to('medium') {
+  @media (min-width: 1300px) {
+    width: 80%;
+  }
+
+  @include respond-to('large') {
     width: 100%;
   }
 

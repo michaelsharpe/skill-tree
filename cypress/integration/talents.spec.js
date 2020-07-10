@@ -23,7 +23,7 @@ describe('Talent scren', () => {
     cy.get('[cy-test="counter"]').should('contain', 0);
     cy.get('[cy-test="stack"]').click();
     cy.get('[cy-test="counter"]').should('contain', 1);
-    cy.get('[cy-test="stack"]').click();
+    cy.get('[cy-test="stack"]').rightclick();
     cy.get('[cy-test="counter"]').should('contain', 0);
 
     // here we ensure that 6 is the max even if all icons are clicked

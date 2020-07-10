@@ -28,11 +28,14 @@ const TalentNode = ({talent, updateTalent, parent, counter}) => {
 
   const counterFull = counter.current >= counter.total;
 
-  const onClick = event => {
+  const onLeftClick = event => {
     if (!parentLocked && !counterFull && !unlocked) {
       unlockTalent();
     }
+  };
 
+  const onRightClick = event => {
+    event.preventDefault();
     if (!childLocked && !parentLocked && unlocked) {
       lockTalent();
     }
@@ -43,7 +46,8 @@ const TalentNode = ({talent, updateTalent, parent, counter}) => {
       <div
         className="talent"
         data-testid={`talent-${talent.icon}`}
-        onClick={onClick}
+        onClick={onLeftClick}
+        onContextMenu={onRightClick}
       >
         <div className={`icon-box ${unlocked ? 'active' : 'inactive'}`}>
           <Icon icon={icon} active={unlocked} />

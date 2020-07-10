@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from '../Icon';
 
 import './talentNode.scss';
+import ProgressBar from '../ProgressBar';
 
 const TalentNode = ({talent, updateTalent, parent, counter}) => {
   const icon = {
@@ -44,8 +45,17 @@ const TalentNode = ({talent, updateTalent, parent, counter}) => {
         data-testid={`talent-${talent.icon}`}
         onClick={onClick}
       >
-        <Icon icon={icon} active={unlocked} />
+        <div className={`icon-box ${unlocked ? 'active' : 'inactive'}`}>
+          <Icon icon={icon} active={unlocked} />
+        </div>
       </div>
+
+      {!!talent.children.length && (
+        <div className="progress-container" data-testid="progress">
+          <ProgressBar width="100" percentage={!childLocked ? '0' : '1'} />
+        </div>
+      )}
+
       {!!talent.children &&
         talent.children.map((child, i) => (
           <TalentNode

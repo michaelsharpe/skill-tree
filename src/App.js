@@ -1,8 +1,8 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 
-import store from './store';
-import TalentScreen from './screens/CalculatorScreen';
+import store from './Store';
+import TalentScreen from './Screens/CalculatorScreen';
 
 function App() {
   return (

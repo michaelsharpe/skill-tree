@@ -1,4 +1,4 @@
-import data from './data/talents.json';
+import data from './Data/talents.json';
 
 const api = {
   loadTalentTrees() {

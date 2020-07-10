@@ -6,6 +6,7 @@ describe('TalentNode', () => {
   it('renders the icon of the talent', () => {
     const talent = {
       icon: 'berserker rage',
+      children: [],
     };
 
     const {queryByTestId} = render(<TalentNode talent={talent} />);
@@ -16,7 +17,10 @@ describe('TalentNode', () => {
   it('renders the nodes children', () => {
     const talent = {
       icon: 'berserker rage',
-      children: [{icon: 'death blow'}, {icon: 'insane fury'}],
+      children: [
+        {icon: 'death blow', children: []},
+        {icon: 'insane fury', children: []},
+      ],
     };
 
     const {queryByTestId} = render(<TalentNode talent={talent} />);
@@ -49,7 +53,7 @@ describe('TalentNode', () => {
       id: 1,
       icon: 'metal-butterfly',
       unlocked: false,
-      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false}],
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false, children: []}],
     };
 
     const onClick = jest.fn().mockName('updateTalent');
@@ -67,7 +71,7 @@ describe('TalentNode', () => {
       id: 1,
       icon: 'metal-butterfly',
       unlocked: true,
-      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false}],
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false, children: []}],
     };
 
     const onClick = jest.fn().mockName('updateTalent');
@@ -85,7 +89,7 @@ describe('TalentNode', () => {
       id: 1,
       icon: 'metal-butterfly',
       unlocked: false,
-      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false}],
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false, children: []}],
     };
 
     const onClick = jest.fn().mockName('updateTalent');
@@ -108,7 +112,7 @@ describe('TalentNode', () => {
       id: 1,
       icon: 'metal-butterfly',
       unlocked: true,
-      children: [{id: 2, icon: 'drunk-unicorn', unlocked: true}],
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: true, children: []}],
     };
 
     const onClick = jest.fn().mockName('updateTalent');
@@ -133,7 +137,7 @@ describe('TalentNode', () => {
       id: 1,
       icon: 'metal-butterfly',
       unlocked: false,
-      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false}],
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false, children: []}],
     };
 
     const onClick = jest.fn().mockName('updateTalent');
@@ -158,7 +162,7 @@ describe('TalentNode', () => {
       id: 1,
       icon: 'metal-butterfly',
       unlocked: true,
-      children: [{id: 2, icon: 'drunk-unicorn', unlocked: true}],
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: true, children: []}],
     };
 
     const onClick = jest.fn().mockName('updateTalent');
@@ -174,5 +178,39 @@ describe('TalentNode', () => {
 
     fireEvent.click(queryByTestId(`talent-${talent.icon}`));
     expect(onClick).not.toHaveBeenCalled();
+  });
+
+  it('render a progres bar if it has children', () => {
+    const talent = {
+      id: 1,
+      icon: 'metal-butterfly',
+      unlocked: true,
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: true, children: []}],
+    };
+
+    const noop = () => {};
+
+    const {queryByTestId} = render(
+      <TalentNode updateTalent={noop} talent={talent} />,
+    );
+
+    expect(queryByTestId('progress')).not.toBeNull();
+  });
+
+  it("render doesn't a progres bar if it has no children", () => {
+    const talent = {
+      id: 1,
+      icon: 'metal-butterfly',
+      unlocked: true,
+      children: [],
+    };
+
+    const noop = () => {};
+
+    const {queryByTestId} = render(
+      <TalentNode updateTalent={noop} talent={talent} />,
+    );
+
+    expect(queryByTestId('progress')).toBeNull();
   });
 });

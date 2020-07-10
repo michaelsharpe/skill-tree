@@ -1,6 +1,6 @@
-const data = require('./../../src/data/talents.json');
+const data = require('./../../src/Data/talents.json');
 
-const {normalizeTreeData} = require('./../../src/helpers/normalizeData');
+const {normalizeTreeData} = require('./../../src/Helpers/normalizeData');
 
 const normalized = normalizeTreeData(data);
 

@@ -1,18 +1,18 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {
-  selectUnlockedTalents,
-  selectCounterTotal,
-} from '../../../store/selectors';
+
+import './talentCounter.scss';
+
+import {selectUnlockedTalents, selectCounterTotal} from 'Store/selectors';
 
 export const TalentCounter = ({current, total}) => {
   return (
     <div>
-      <h1>Points Spent</h1>
-      <p>
-        <span cy-test="counter">{current}</span>/
+      <p className="counter">
+        <span cy-test="counter">{current}</span>&nbsp;/&nbsp;
         <span cy-test="total">{total}</span>
       </p>
+      <h2 className="sub-header">Points Spent</h2>
     </div>
   );
 };

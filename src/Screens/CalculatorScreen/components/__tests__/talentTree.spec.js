@@ -2,8 +2,8 @@ import React from 'react';
 import {render} from '@testing-library/react';
 
 import TalentTree from '../TalentTree';
-import talentData from '../../../../data/talents.json';
-import {normalizeSingleTree} from '../../../../helpers/normalizeData';
+import talentData from 'Data/talents.json';
+import {normalizeSingleTree} from 'Helpers/normalizeData';
 
 const singleTreeData = talentData[0];
 

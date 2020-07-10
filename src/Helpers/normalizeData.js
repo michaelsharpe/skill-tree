@@ -1,6 +1,6 @@
 import {normalize, denormalize} from 'normalizr';
 
-import {talentTree} from '../store/schema';
+import {talentTree} from '../Store/schema';
 
 export const normalizeTreeData = data => {
   return normalize(data, [talentTree]);

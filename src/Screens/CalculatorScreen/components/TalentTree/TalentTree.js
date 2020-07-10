@@ -1,11 +1,15 @@
 import React from 'react';
 
-import TalentNode from './TalentNode';
+import './talentTree.scss';
+
+import TalentNode from '../TalentNode';
 
 const TalentTree = ({talentTree, updateTalent, counter}) => {
   return (
     <div className="talent-tree">
-      <p>{talentTree.name}</p>
+      <div className="tree-name">
+        <p>{talentTree.name.toUpperCase()}</p>
+      </div>
       {!!talentTree.talents &&
         talentTree.talents.map((talent, i) => (
           <TalentNode

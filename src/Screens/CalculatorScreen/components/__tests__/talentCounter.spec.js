@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 
-import {TalentCounter} from '../TalentCounter';
+import {TalentCounter} from '../TalentCounter/TalentCounter';
 
 describe('TalentCounter', () => {
   it('renders', () => {

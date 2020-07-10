@@ -6,18 +6,26 @@ Object {
   "baseElement": <body>
     <div>
       <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
+      <div
         class="icon icon-stack inactive"
         cy-test="stack"
         data-testid="stack"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-stack inactive"
-      cy-test="stack"
-      data-testid="stack"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -79,25 +87,37 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="icon icon-stack inactive"
-        cy-test="stack"
-        data-testid="stack"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
     </div>
     <div>
+      <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cutlery inactive"
+          cy-test="cutlery"
+          data-testid="cutlery"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
       <div
         class="icon icon-cutlery inactive"
         cy-test="cutlery"
         data-testid="cutlery"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-cutlery inactive"
-      cy-test="cutlery"
-      data-testid="cutlery"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -159,32 +179,48 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="icon icon-stack inactive"
-        cy-test="stack"
-        data-testid="stack"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cutlery inactive"
-        cy-test="cutlery"
-        data-testid="cutlery"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cutlery inactive"
+          cy-test="cutlery"
+          data-testid="cutlery"
+        />
+      </div>
     </div>
     <div>
+      <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cake inactive"
+          cy-test="cake"
+          data-testid="cake"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
       <div
         class="icon icon-cake inactive"
         cy-test="cake"
         data-testid="cake"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-cake inactive"
-      cy-test="cake"
-      data-testid="cake"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -246,39 +282,59 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="icon icon-stack inactive"
-        cy-test="stack"
-        data-testid="stack"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cutlery inactive"
-        cy-test="cutlery"
-        data-testid="cutlery"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cutlery inactive"
+          cy-test="cutlery"
+          data-testid="cutlery"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cake inactive"
-        cy-test="cake"
-        data-testid="cake"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cake inactive"
+          cy-test="cake"
+          data-testid="cake"
+        />
+      </div>
     </div>
     <div>
+      <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-crown inactive"
+          cy-test="crown"
+          data-testid="crown"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
       <div
         class="icon icon-crown inactive"
         cy-test="crown"
         data-testid="crown"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-crown inactive"
-      cy-test="crown"
-      data-testid="crown"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -340,46 +396,70 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="icon icon-stack inactive"
-        cy-test="stack"
-        data-testid="stack"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cutlery inactive"
-        cy-test="cutlery"
-        data-testid="cutlery"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cutlery inactive"
+          cy-test="cutlery"
+          data-testid="cutlery"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cake inactive"
-        cy-test="cake"
-        data-testid="cake"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cake inactive"
+          cy-test="cake"
+          data-testid="cake"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-crown inactive"
-        cy-test="crown"
-        data-testid="crown"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-crown inactive"
+          cy-test="crown"
+          data-testid="crown"
+        />
+      </div>
     </div>
     <div>
+      <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-yacht inactive"
+          cy-test="yacht"
+          data-testid="yacht"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
       <div
         class="icon icon-yacht inactive"
         cy-test="yacht"
         data-testid="yacht"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-yacht inactive"
-      cy-test="yacht"
-      data-testid="yacht"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -441,53 +521,81 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="icon icon-stack inactive"
-        cy-test="stack"
-        data-testid="stack"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cutlery inactive"
-        cy-test="cutlery"
-        data-testid="cutlery"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cutlery inactive"
+          cy-test="cutlery"
+          data-testid="cutlery"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cake inactive"
-        cy-test="cake"
-        data-testid="cake"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cake inactive"
+          cy-test="cake"
+          data-testid="cake"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-crown inactive"
-        cy-test="crown"
-        data-testid="crown"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-crown inactive"
+          cy-test="crown"
+          data-testid="crown"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-yacht inactive"
-        cy-test="yacht"
-        data-testid="yacht"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-yacht inactive"
+          cy-test="yacht"
+          data-testid="yacht"
+        />
+      </div>
     </div>
     <div>
+      <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-snorkel inactive"
+          cy-test="snorkel"
+          data-testid="snorkel"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
       <div
         class="icon icon-snorkel inactive"
         cy-test="snorkel"
         data-testid="snorkel"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-snorkel inactive"
-      cy-test="snorkel"
-      data-testid="snorkel"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -549,60 +657,92 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="icon icon-stack inactive"
-        cy-test="stack"
-        data-testid="stack"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cutlery inactive"
-        cy-test="cutlery"
-        data-testid="cutlery"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cutlery inactive"
+          cy-test="cutlery"
+          data-testid="cutlery"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cake inactive"
-        cy-test="cake"
-        data-testid="cake"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cake inactive"
+          cy-test="cake"
+          data-testid="cake"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-crown inactive"
-        cy-test="crown"
-        data-testid="crown"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-crown inactive"
+          cy-test="crown"
+          data-testid="crown"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-yacht inactive"
-        cy-test="yacht"
-        data-testid="yacht"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-yacht inactive"
+          cy-test="yacht"
+          data-testid="yacht"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-snorkel inactive"
-        cy-test="snorkel"
-        data-testid="snorkel"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-snorkel inactive"
+          cy-test="snorkel"
+          data-testid="snorkel"
+        />
+      </div>
     </div>
     <div>
+      <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-lightning inactive"
+          cy-test="lightning"
+          data-testid="lightning"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
       <div
         class="icon icon-lightning inactive"
         cy-test="lightning"
         data-testid="lightning"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-lightning inactive"
-      cy-test="lightning"
-      data-testid="lightning"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -664,67 +804,103 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="icon icon-stack inactive"
-        cy-test="stack"
-        data-testid="stack"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-stack inactive"
+          cy-test="stack"
+          data-testid="stack"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cutlery inactive"
-        cy-test="cutlery"
-        data-testid="cutlery"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cutlery inactive"
+          cy-test="cutlery"
+          data-testid="cutlery"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-cake inactive"
-        cy-test="cake"
-        data-testid="cake"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-cake inactive"
+          cy-test="cake"
+          data-testid="cake"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-crown inactive"
-        cy-test="crown"
-        data-testid="crown"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-crown inactive"
+          cy-test="crown"
+          data-testid="crown"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-yacht inactive"
-        cy-test="yacht"
-        data-testid="yacht"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-yacht inactive"
+          cy-test="yacht"
+          data-testid="yacht"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-snorkel inactive"
-        cy-test="snorkel"
-        data-testid="snorkel"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-snorkel inactive"
+          cy-test="snorkel"
+          data-testid="snorkel"
+        />
+      </div>
     </div>
     <div>
       <div
-        class="icon icon-lightning inactive"
-        cy-test="lightning"
-        data-testid="lightning"
-      />
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-lightning inactive"
+          cy-test="lightning"
+          data-testid="lightning"
+        />
+      </div>
     </div>
     <div>
+      <div
+        class="icon-box inactive"
+      >
+        <div
+          class="icon icon-skulll inactive"
+          cy-test="skulll"
+          data-testid="skulll"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="icon-box inactive"
+    >
       <div
         class="icon icon-skulll inactive"
         cy-test="skulll"
         data-testid="skulll"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="icon icon-skulll inactive"
-      cy-test="skulll"
-      data-testid="skulll"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

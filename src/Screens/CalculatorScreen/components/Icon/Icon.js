@@ -6,11 +6,13 @@ import './icon.scss';
 const Icon = ({icon, active}) => {
   const isActive = active ? 'active' : 'inactive';
   return (
-    <div
-      data-testid={icon.name}
-      cy-test={icon.name}
-      className={`icon icon-${icon.name} ${isActive}`}
-    ></div>
+    <div className={`icon-box ${active ? 'active' : 'inactive'}`}>
+      <div
+        data-testid={icon.name}
+        cy-test={icon.name}
+        className={`icon icon-${icon.name} ${isActive}`}
+      ></div>
+    </div>
   );
 };
 

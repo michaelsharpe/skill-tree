@@ -1,17 +1,19 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 
+import './talentTreeGroup.scss';
+
 import {
   selectAllTalentTrees,
   selectUnlockedTalents,
   selectCounterTotal,
-} from '../../../store/selectors';
+} from 'Store/selectors';
 
-import TalentTree from './TalentTree';
+import TalentTree from '../TalentTree';
 import {
   loadTalentTrees,
   updateTalent,
-} from '../../../store/calculator/calculator.actions';
+} from 'Store/calculator/calculator.actions';
 
 export const TalentTreeGroup = ({
   loadTalentTrees,

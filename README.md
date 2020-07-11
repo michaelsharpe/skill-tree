@@ -10,7 +10,7 @@ Public development Trello board available [here](https://trello.com/b/cNZZn1qR/s
 
 This application has been architected for future expansion as well as stability. An Outside in TDD approach was used for the whole development cycle, which includes both e2e tests using cypress and unit tests using test-library. The app simulates communicating with a backend API via mocked Promises.
 
-Trello was used to track all new features, as well as tracking future improvements and bugs encountered. The board contains a number of future features for the application that mat still be implemented.
+Trello was used to track all new features, as well as tracking future improvements and bugs encountered. The board contains a number of future features for the application that may still be implemented.
 
 The application was started with CI and automated deployment in mind. Github actions has been used as a test runner on PR requests and merges into master. A strict feature based branching strategy was used, along with thorough testing practices. Linting and auto-formatting with prettier were set up to ensure code consistency and clean, legible code.
 
@@ -23,6 +23,8 @@ Redux was chosen as the state library due to its high scalability, ease of testi
 Due to similar complexity concerns, memoized selectors using reselect were used to access the state for counting talent points, which are derived from the state rather than being stored in it. Selectors, being composable from simpler atomic units, allowed for easy refactoring when state names were changed.
 
 The redux state was tested with a wide integration strategy. The entire module was tested at once. The reducer was tested with the actions, and selectors used to select data from the state for asserting.
+
+The requirements for the project on mobile had to be modified, as mobile devices do not have a right ouse button, rendering the mobile experience quite bad.  Thus as an alternative a talent can be removed via a double click as welll as a right mouse click on both desktop and mobile.
 
 There are a few larger gaps in the application as it stands. There is a lack of proper inline documentation utilizing a strategy such as JsDocs. The application has also not been optimized for accessibility. Finally, there is no UX around error handling (yet), though it is the most immediate feature to follow.
 

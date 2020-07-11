@@ -48,6 +48,7 @@ const TalentNode = ({talent, updateTalent, parent, counter}) => {
         data-testid={`talent-${talent.icon}`}
         onClick={onLeftClick}
         onContextMenu={onRightClick}
+        onDoubleClick={onRightClick}
       >
         <div className={`icon-box ${unlocked ? 'active' : 'inactive'}`}>
           <Icon icon={icon} active={unlocked} />

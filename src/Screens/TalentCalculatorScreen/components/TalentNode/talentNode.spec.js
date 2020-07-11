@@ -1,6 +1,6 @@
 import React from 'react';
-import {render, fireEvent, waitFor} from '@testing-library/react';
-import TalentNode from '../TalentNode';
+import {render, fireEvent} from '@testing-library/react';
+import TalentNode from './TalentNode';
 
 describe('TalentNode', () => {
   it('renders the icon of the talent', () => {
@@ -146,89 +146,89 @@ describe('TalentNode', () => {
 
   // Currently right mouse click events are not triggering reacts onContextMenu.
   // Bug filed: https://github.com/testing-library/react-testing-library/issues/742
-  describe.skip('locking', () => {
-    it('locks a talent when the right mouse button is clicked', async () => {
-      const talent = {
-        id: 1,
-        icon: 'metal-butterfly',
-        unlocked: true,
-        children: [
-          {id: 2, icon: 'drunk-unicorn', unlocked: false, children: []},
-        ],
-      };
+  describe('locking', () => {
+    let queryByTestId;
+    let talent;
+    let onClick;
 
-      const onClick = jest.fn().mockName('updateTalent');
+    const counterDefault = {
+      current: 2,
+      total: 6,
+    };
 
-      const counter = {
-        current: 6,
-        total: 6,
-      };
+    const defaultTalent = {
+      id: 1,
+      icon: 'metal-butterfly',
+      unlocked: true,
+      children: [{id: 2, icon: 'drunk-unicorn', unlocked: false, children: []}],
+    };
 
-      const {queryByTestId} = render(
+    const setup = (counter = counterDefault, setupTalent = defaultTalent) => {
+      talent = setupTalent;
+      onClick = jest.fn().mockName('updateTalent');
+
+      const context = render(
         <TalentNode updateTalent={onClick} talent={talent} counter={counter} />,
       );
 
-      fireEvent.click(queryByTestId(`talent-${talent.icon}`), {
-        button: 2,
-      });
+      queryByTestId = context.queryByTestId;
+    };
 
-      expect(onClick).toHaveBeenCalledWith(talent, {
-        unlocked: false,
+    describe('double click', () => {
+      it('locks a skill when double clicked', () => {
+        setup();
+
+        fireEvent.dblClick(queryByTestId(`talent-${talent.icon}`));
+
+        expect(onClick).toHaveBeenCalledWith(talent, {
+          unlocked: false,
+        });
       });
     });
 
-    it('allows locking even when points are used up', () => {
-      const talent = {
-        id: 1,
-        icon: 'metal-butterfly',
-        unlocked: true,
-        children: [
-          {id: 2, icon: 'drunk-unicorn', unlocked: true, children: []},
-        ],
-      };
+    describe.skip('right click', () => {
+      it('locks a talent when the right mouse button is clicked', async () => {
+        setup();
+        fireEvent.click(queryByTestId(`talent-${talent.icon}`), {
+          button: 2,
+        });
 
-      const onClick = jest.fn().mockName('updateTalent');
-
-      const counter = {
-        current: 6,
-        total: 6,
-      };
-
-      const {queryByTestId} = render(
-        <TalentNode updateTalent={onClick} talent={talent} counter={counter} />,
-      );
-
-      fireEvent.click(queryByTestId(`talent-${talent.children[0].icon}`), {
-        button: 2,
+        expect(onClick).toHaveBeenCalledWith(talent, {
+          unlocked: false,
+        });
       });
-      expect(onClick).toHaveBeenCalledWith(talent.children[0], {
-        unlocked: false,
+
+      it('allows locking even when points are used up', () => {
+        const counter = {
+          current: 6,
+          total: 6,
+        };
+
+        setup(counter);
+
+        fireEvent.click(queryByTestId(`talent-${talent.children[0].icon}`), {
+          button: 2,
+        });
+        expect(onClick).toHaveBeenCalledWith(talent.children[0], {
+          unlocked: false,
+        });
       });
-    });
 
-    it('prevents locking a talent whose child is unlocked', () => {
-      const talent = {
-        id: 1,
-        icon: 'metal-butterfly',
-        unlocked: true,
-        children: [
-          {id: 2, icon: 'drunk-unicorn', unlocked: true, children: []},
-        ],
-      };
+      it('prevents locking a talent whose child is unlocked', () => {
+        const talent = {
+          id: 1,
+          icon: 'metal-butterfly',
+          unlocked: true,
+          children: [
+            {id: 2, icon: 'drunk-unicorn', unlocked: true, children: []},
+          ],
+        };
 
-      const onClick = jest.fn().mockName('updateTalent');
+        setup(undefined, talent);
 
-      const counter = {
-        current: 4,
-        total: 6,
-      };
-
-      const {queryByTestId} = render(
-        <TalentNode updateTalent={onClick} talent={talent} counter={counter} />,
-      );
-
-      fireEvent.click(queryByTestId(`talent-${talent.icon}`));
-      expect(onClick).not.toHaveBeenCalled();
+        fireEvent.click(queryByTestId(`talent-${talent.icon}`));
+        expect(onClick).not.toHaveBeenCalled();
+      });
     });
   });
 

@@ -2,16 +2,13 @@ import {createStore, applyMiddleware} from 'redux';
 import {normalize} from 'normalizr';
 import thunk from 'redux-thunk';
 
-import talentTreeReducer from '../talentCalculator/talentCalculator.reducers';
-import {
-  loadTalentTrees,
-  updateTalent,
-} from '../talentCalculator/talentCalculator.actions';
+import talentTreeReducer from './talentCalculator.reducers';
+import {loadTalentTrees, updateTalent} from './talentCalculator.actions';
 import {
   selectAllTalentTrees,
   selectTalent,
   selectUnlockedTalents,
-} from '../talentCalculator/talentCalculator.selectors';
+} from './talentCalculator.selectors';
 
 import * as schema from '../schema';
 

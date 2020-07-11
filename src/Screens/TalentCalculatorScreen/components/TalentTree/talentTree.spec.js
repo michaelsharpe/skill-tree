@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 
-import TalentTree from '../TalentTree';
+import TalentTree from './TalentTree';
 import talentData from 'Data/talents.json';
 import {normalizeSingleTree} from 'Helpers/normalizeData';
 

@@ -1,6 +1,6 @@
 # TitanStar Legends - Rune Mastery Talent Calculator 9000
 
-[![Coverage Status](https://coveralls.io/repos/github/michaelsharpe/rune-mastery/badge.svg?branch=master)](https://coveralls.io/github/michaelsharpe/rune-mastery) [![Maintainability](https://api.codeclimate.com/v1/badges/188d41c0d4e4703901f7/maintainability)](https://codeclimate.com/github/michaelsharpe/rune-mastery/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/188d41c0d4e4703901f7/test_coverage)](https://codeclimate.com/github/michaelsharpe/rune-mastery/test_coverage) ![coverage:branches](coverage/badge-branches.svg) ![coverage:functions](coverage/badge-functions.svg) ![coverage:lines](coverage/badge-lines.svg) ![coverage:summary](coverage/badge-statements.svg) !
+[![Coverage Status](https://coveralls.io/repos/github/michaelsharpe/rune-mastery/badge.svg?branch=master)](https://coveralls.io/github/michaelsharpe/rune-mastery) [![Maintainability](https://api.codeclimate.com/v1/badges/188d41c0d4e4703901f7/maintainability)](https://codeclimate.com/github/michaelsharpe/rune-mastery/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/188d41c0d4e4703901f7/test_coverage)](https://codeclimate.com/github/michaelsharpe/rune-mastery/test_coverage) ![coverage:branches](coverage/badge-branches.svg) ![coverage:functions](coverage/badge-functions.svg) ![coverage:lines](coverage/badge-lines.svg) ![coverage:summary](coverage/badge-statements.svg)
 
 Live site can be found here: [TitanStar Rune Mastery](https://rune-mastery.netlify.app/)
 
